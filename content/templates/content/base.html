@@ -255,7 +255,9 @@
           <a href="{% url 'inbox' %}">Inbox</a>
           <a href="{% url 'logout' %}">Logout</a>
           {% if user.username == 'Mwalimu' %}
+            <a href="{% url 'submitted_exams' %}">Pending grading</a>
             <a href="{% url 'submissions' %}">Submissions</a>
+            
           {% endif %}
           <a href="#">👤 Profile</a>
         {% else %}
